@@ -1,0 +1,9 @@
+/* Global style: set default font to Menlo (with sensible fallbacks).
+	 Note: Menlo is a macOS system font; other platforms will fall back to alternatives.
+*/
+
+html, body {
+	font-family: Menlo, Monaco, "Courier New", ui-monospace, SFMono-Regular, "Roboto Mono", monospace;
+}
+
+/* You can add global styles to this file, and also import other style files */

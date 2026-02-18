@@ -1,0 +1,60 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<style>
+  :host {
+    box-sizing: border-box;
+  }
+
+  header.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: transparent;
+  }
+
+  header.app-header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .title-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nav-link {
+    text-decoration: none;
+  }
+
+  main.app-main {
+    padding: 1.5rem;
+  }
+</style>
+
+<header class="app-header">
+  <h1><a class="title-link" [routerLink]="['/']">{{ title() }}</a></h1>
+  <nav>
+    <a *ngIf="previousChapter()" class="pill nav-link" [routerLink]="['/', previousChapter()]" style="margin-left:0.5rem">Anterior</a>
+    <a *ngIf="nextChapter()" class="pill nav-link" [routerLink]="['/', nextChapter()]" style="margin-left:0.5rem">Próximo</a>
+  </nav>
+</header>
+
+<main class="app-main">
+  <router-outlet></router-outlet>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
